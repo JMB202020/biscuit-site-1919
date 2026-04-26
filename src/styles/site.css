@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400 600 700 800; font-display: swap; src: url('/fonts/inter-latin.woff2') format('woff2'); }
+@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 700 800; font-display: swap; src: url('/fonts/nunito-latin.woff2') format('woff2'); }
+
+@theme {
+  --color-brand-bg: #FEF5F7;
+  --color-brand-accent: #EF3F56;
+  --color-brand-accent-deep: #BF3245;
+  --color-ink: #48131A;
+  --color-ink-soft: #8F2634;
+  --color-border: #FAC5CC;
+  --color-cream: #FEF0F1;
+  --color-accent-light: #FDE2E6;
+  --color-white: #FFFFFF;
+  --font-display: 'Nunito', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); color: var(--color-ink); background-color: var(--color-brand-bg); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); }
+img { max-width: 100%; display: block; }
+
+body { font-size: 1rem; line-height: 1.6; }
+p { margin-bottom: 1rem; }
